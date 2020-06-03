@@ -61,8 +61,10 @@ def interpolate(what, when, how='interpolate'):
     return df_combined
     return z[z['This'] == True]
 
-def get_context_config(when, global_version = 'v1'):
+def get_context_config(when, global_version = 'g1'):
     """Global configuration logic
+    
+    g1 is 'version 1' but can tell difference in versions.
     """ 
     df_global = read('global')
     
